@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<!-- en tymeleaf se deben poner las etiquetas de cierre  -->
+<title th:text="${titulo}"></title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
+</head>
+<body>
+	<h1 th:text="${titulo}" class="color-rojo"></h1>
+	<h2 class="color-azul">decorando con estilos css recursos
+		estaticos</h2>
+	<img th:src="@{/images/star-wars-logo_3840x2160.jpg}" width="400px">
+</body>
+</html>
